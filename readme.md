@@ -1,6 +1,2 @@
-# Juego del Ahorcado
-
-Hecho con lenguaje de programación JavaScript
-
-Diseñado con Bootstrap
-
+# juego_del_ahorcado
+Juego del Ahorcado hecho con HTML, CSS (Bootstrap) y JavaScript

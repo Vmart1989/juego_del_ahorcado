@@ -2,7 +2,7 @@
 let palabra = document.getElementById('palabra')
 
 
-let palabras = ['BALLENA','BRUJA', 'MARRON', 'FLORA', 'MOTOCICLETA', 'FRESA', 'BANANA', 'AGUA']
+let palabras = ['BALLENA','BRUJA', 'MARRON', 'FLORA', 'MOTOCICLETA', 'FRESA', 'BANANA', 'AGUA', 'FUTBOL', 'BALONCESTO', 'PLAYA', 'CONTENEDOR', 'PROGRAMACION', 'MITO', 'LENGUAJE', 'MICROBIO', 'SULTAN', 'ALFOMBRA', 'TELESCOPIO', 'TSUNAMI', 'ACORDEON', 'MILOJA', 'ORDENADOR']
 let imagen = document.getElementById("imagen_ahorcado")
 let game_over = document.getElementById("game_over")
 

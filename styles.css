@@ -5,3 +5,18 @@
     
     
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #caja_doble {
+      flex-direction: column!important;
+    }
+    #caja_ahorcado {
+        width: 100%!important;
+    }
+    #caja_teclado {
+        width: 100%!important;
+    }
+  }
+
+  
