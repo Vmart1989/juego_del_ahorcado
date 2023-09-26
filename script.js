@@ -46,6 +46,7 @@ function empezarJuego() {
     imagen.src = imagenes[0]
     game_over.innerHTML = ""
     boton_empezar.disabled="true";
+    boton_revelar.disabled="";
     
     for (let index = 0; index < boton_letra.length; index++) {
         boton_letra[index].disabled="";
@@ -55,7 +56,7 @@ function empezarJuego() {
 
         secreta = palabraSecreta()
         for (let i = 0; i < secreta.length; i++) {
-            guionesSecreta[i] = "_"
+            guionesSecreta[i] = " _ "
         }
         palabra.innerHTML = guionesSecreta.join(' ')
 }
@@ -95,7 +96,7 @@ function comprobarLetra(e) {
                 palabra.innerHTML = guionesSecreta.join('')
 
             } 
-            if (!guionesSecreta.includes("_")) {
+            if (!guionesSecreta.includes(" _ ")) {
                 game_over.innerHTML = "¡THE HAS SALVADO!"
                 imagen.src = "img/happy.gif";
                 boton_empezar.value = "Jugar de nuevo"
