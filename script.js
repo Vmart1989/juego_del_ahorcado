@@ -13,6 +13,7 @@ a4 = "img/a4.png"
 a5 = "img/a5.png"
 a6 = "img/a6.png"
 
+
 let imagenes = [a1, a2, a3, a4, a5, a6]
 
 let boton_letra = document.querySelectorAll('button')
@@ -40,6 +41,7 @@ function palabraSecreta() {
 
 function empezarJuego() {
     errores = 0
+    guionesSecreta = []
     empezarPartida = true
     imagen.src = imagenes[0]
     game_over.innerHTML = ""
@@ -95,8 +97,10 @@ function comprobarLetra(e) {
             } 
             if (!guionesSecreta.includes("_")) {
                 game_over.innerHTML = "¡THE HAS SALVADO!"
+                imagen.src = "img/happy.gif";
                 boton_empezar.value = "Jugar de nuevo"
                 boton_empezar.disabled="";
+                boton_revelar.disabled="true";
                 for (let index = 0; index < boton_letra.length; index++) {
                     boton_letra[index].disabled="true";
                 }
