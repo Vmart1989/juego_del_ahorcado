@@ -61,8 +61,14 @@ function empezarJuego() {
 
 function revelarPalabra() {
     palabra.innerHTML = secreta;
+    
     boton_empezar.disabled="";
     boton_empezar.value = "Jugar de nuevo";
+    for (let index = 0; index < boton_letra.length; index++) {
+        boton_letra[index].disabled="true";
+        
+    }
+    
 
 }
 
@@ -111,6 +117,11 @@ function comprobarLetra(e) {
             game_over.innerHTML = "¡HAS MUERTO!"
             boton_empezar.value = "Jugar de nuevo"
             boton_empezar.disabled="";
+            palabra.innerHTML = secreta;
+            for (let index = 0; index < boton_letra.length; index++) {
+                boton_letra[index].disabled="true";
+                
+            }
         }
     }
 }
